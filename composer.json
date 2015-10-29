@@ -1,0 +1,20 @@
+{
+    "name": "steverobbins/magento-download",
+    "description": "Library to automate Magento edition and version downloads",
+    "license": "CC-BY-4.0",
+    "authors": [
+        {
+            "name": "Steve Robbins",
+            "email": "steve@steverobbins.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src"
+        }
+    }
+}
