@@ -1,5 +1,5 @@
 {
-    "name": "steverobbins/magento-download",
+    "name": "steverobbins/magedownload",
     "description": "Library to automate Magento edition and version downloads",
     "license": "CC-BY-4.0",
     "authors": [

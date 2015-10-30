@@ -1,32 +1,32 @@
 <?php
 /**
- * Magento Download
+ * Magedownload
  *
  * PHP version 5
  *
- * @category  MagentoDownload
- * @package   MagentoDownload
+ * @category  MageDownload
+ * @package   MageDownload
  * @author    Steve Robbins <steve@steverobbins.com>
  * @copyright 2015 Steve Robbins
  * @license   http://creativecommons.org/licenses/by/4.0/ CC BY 4.0
- * @link      https://github.com/steverobbins/magento-download
+ * @link      https://github.com/steverobbins/magedownload
  */
 
-namespace MagentoDownload;
+namespace MageDownload;
 
 use GuzzleHttp\Client;
 
 /**
  * Abstract class
  *
- * @category  MagentoDownload
- * @package   MagentoDownload
+ * @category  MageDownload
+ * @package   MageDownload
  * @author    Steve Robbins <steve@steverobbins.com>
  * @copyright 2015 Steve Robbins
  * @license   http://creativecommons.org/licenses/by/4.0/ CC BY 4.0
- * @link      https://github.com/steverobbins/magento-download
+ * @link      https://github.com/steverobbins/magedownload
  */
-class AbstractMagentoDownload
+class AbstractMageDownload
 {
     const ENDPOINT_URL    = 'www.magentocommerce.com/products/downloads/';
     const ENDPOINT_SCHEMA = 'https';

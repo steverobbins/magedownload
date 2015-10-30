@@ -1,44 +1,44 @@
 <?php
 /**
- * Magento Download
+ * Magedownload
  *
  * PHP version 5
  *
- * @category  MagentoDownload
- * @package   MagentoDownload
+ * @category  MageDownload
+ * @package   MageDownload
  * @author    Steve Robbins <steve@steverobbins.com>
  * @copyright 2015 Steve Robbins
  * @license   http://creativecommons.org/licenses/by/4.0/ CC BY 4.0
- * @link      https://github.com/steverobbins/magento-download
+ * @link      https://github.com/steverobbins/magedownload
  */
 
-namespace MagentoDownload;
+namespace MageDownload;
 
 /**
- * Get download info
+ * Get a file
  *
- * @category  MagentoDownload
- * @package   MagentoDownload
+ * @category  MageDownload
+ * @package   MageDownload
  * @author    Steve Robbins <steve@steverobbins.com>
  * @copyright 2015 Steve Robbins
  * @license   http://creativecommons.org/licenses/by/4.0/ CC BY 4.0
- * @link      https://github.com/steverobbins/magento-download
+ * @link      https://github.com/steverobbins/magedownload
  */
-class Info extends AbstractMagentoDownload
+class Download extends AbstractMageDownload
 {
     /**
-     * Send a command to the info api
+     * Get a file from the download api
      *
-     * @param $command string
+     * @param $file    string
      * @param $id      string
      * @param $token   string
      *
      * @return string
      */
-    public function sendCommand($command, $id, $token)
+    public function get($file, $id, $token)
     {
         $this->setId($id);
         $this->setToken($token);
-        return $this->action('info', $command);
+        return $this->action('file', $file);
     }
 }
