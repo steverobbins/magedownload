@@ -41,7 +41,8 @@ class AbstractMagentoDownload
                 . $this->id . ':' . $this->token
                 . '@' . self::ENDPOINT_URL
         ]);
-        return $client->get($name . '/' . $additional);
+        $response = $client->get($name . '/' . $additional);
+        return $response->getBody()->getContents();
     }
 
     public function setId($id)
