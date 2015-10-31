@@ -29,9 +29,9 @@ class Download extends AbstractMageDownload
     /**
      * Get a file from the download api
      *
-     * @param $file    string
-     * @param $id      string
-     * @param $token   string
+     * @param string $file
+     * @param string $id
+     * @param string $token
      *
      * @return string
      */

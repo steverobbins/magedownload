@@ -34,6 +34,14 @@ class AbstractMageDownload
     private $id;
     private $token;
 
+    /**
+     * Hit api with specified action
+     *
+     * @param string $name
+     * @param string $additional
+     *
+     * @return string
+     */
     protected function action($name, $additional = '')
     {
         $client = new Client([
@@ -45,11 +53,26 @@ class AbstractMageDownload
         return $response->getBody()->getContents();
     }
 
+    /**
+     * ID setter
+     *
+     * @param string $id
+     *
+     * @return AbstractMageDownload
+     */
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
     }
 
+    /**
+     * Token setter
+     *
+     * @param string $token
+     *
+     * @return AbstractMageDownload
+     */
     public function setToken($token)
     {
         $this->token = $token;

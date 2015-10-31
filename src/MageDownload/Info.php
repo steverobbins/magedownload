@@ -29,9 +29,9 @@ class Info extends AbstractMageDownload
     /**
      * Send a command to the info api
      *
-     * @param $command string
-     * @param $id      string
-     * @param $token   string
+     * @param string $command
+     * @param string $id
+     * @param string $token
      *
      * @return string
      */
