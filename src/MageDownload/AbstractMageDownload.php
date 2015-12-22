@@ -14,8 +14,6 @@
 
 namespace MageDownload;
 
-use GuzzleHttp\Client;
-
 /**
  * Abstract class
  *
@@ -42,15 +40,21 @@ class AbstractMageDownload
      *
      * @return string
      */
-    protected function action($name, $additional = '')
+    public function action($name, $additional = '')
     {
-        $client = new Client([
-            'base_uri' => self::ENDPOINT_SCHEMA . '://'
+        return file_get_contents($this->getBaseUri() . $name . '/' . $additional);
+    }
+
+    /**
+     * Get the base uri
+     *
+     * @return string
+     */
+    public function getBaseUri()
+    {
+        return self::ENDPOINT_SCHEMA . '://'
                 . $this->id . ':' . $this->token
-                . '@' . self::ENDPOINT_URL
-        ]);
-        $response = $client->get($name . '/' . $additional);
-        return $response->getBody()->getContents();
+                . '@' . self::ENDPOINT_URL;
     }
 
     /**

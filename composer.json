@@ -9,7 +9,6 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3"
