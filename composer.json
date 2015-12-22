@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "symfony/yaml": "2.6.*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3"
